@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — PureCode</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="nav-icon">{ }</span>
+        <span class="nav-title">PureCode</span>
+      </div>
+      <div class="nav-right">
+        <span class="nav-badge" data-i18n="nav-badge">Privacy Policy</span>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-flag" id="lang-flag">🇷🇺</span>
+          <span class="lang-label" id="lang-label">RU</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+
+    <!-- Hero -->
+    <header class="hero" id="hero">
+      <div class="hero-glow"></div>
+      <div class="app-icon">
+        <span>{ }</span>
+      </div>
+      <div class="hero-tag">
+        <span class="live-dot"></span>
+        <span data-i18n="hero-tag">Last updated Feb 28, 2026 · Active from this date</span>
+      </div>
+      <h1 class="hero-title" data-i18n-html="hero-title">Privacy <span class="grad-text">Policy</span></h1>
+      <p class="hero-sub" data-i18n="hero-sub">PureCode — Code Screenshot &amp; Export</p>
+      <p class="hero-desc" data-i18n="hero-desc">We built PureCode with a simple belief: your code is yours. No tracking, no data collection, no exceptions.</p>
+    </header>
+
+    <main>
+
+      <!-- 1 -->
+      <div class="card reveal" data-delay="0">
+        <div class="card-header">
+          <div class="card-icon" style="--c:#8c4dff">🛡️</div>
+          <div>
+            <h2 data-i18n="c1-title">Our Commitment</h2>
+            <p class="card-sub" data-i18n="c1-sub">Privacy by design</p>
+          </div>
+        </div>
+        <p data-i18n-html="c1-p1">PureCode is built with privacy as a core principle. We do <strong>not</strong> collect, store, transmit, or share any personal data. Everything you do in PureCode stays entirely on your device.</p>
+        <div class="callout">
+          <div class="callout-icon">💡</div>
+          <p data-i18n-html="c1-callout">PureCode has no servers, no accounts, no analytics, and no third-party SDKs. Your code and images <strong>never leave your device</strong>.</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="card reveal" data-delay="60">
+        <div class="card-header">
+          <div class="card-icon" style="--c:#32dc78">✅</div>
+          <div>
+            <h2 data-i18n="c2-title">What We Do NOT Collect</h2>
+            <p class="card-sub" data-i18n="c2-sub">Absolutely nothing</p>
+          </div>
+        </div>
+        <ul class="check-grid">
+          <li><span class="tick">✓</span><span data-i18n="ch1">Personal information</span></li>
+          <li><span class="tick">✓</span><span data-i18n="ch2">Code or snippets</span></li>
+          <li><span class="tick">✓</span><span data-i18n="ch3">Usage analytics</span></li>
+          <li><span class="tick">✓</span><span data-i18n="ch4">Crash reports</span></li>
+          <li><span class="tick">✓</span><span data-i18n="ch5">Device identifiers</span></li>
+          <li><span class="tick">✓</span><span data-i18n="ch6">Location data</span></li>
+          <li><span class="tick">✓</span><span data-i18n="ch7">Advertising IDs</span></li>
+          <li><span class="tick">✓</span><span data-i18n="ch8">Email or contacts</span></li>
+        </ul>
+      </div>
+
+      <!-- 3 -->
+      <div class="card reveal" data-delay="60">
+        <div class="card-header">
+          <div class="card-icon" style="--c:#ffb432">🖼️</div>
+          <div>
+            <h2 data-i18n="c3-title">Photo Library Access</h2>
+            <p class="card-sub" data-i18n="c3-sub">Save only, never read</p>
+          </div>
+        </div>
+        <p data-i18n-html="c3-p1">PureCode requests permission to <strong>save</strong> images to your Photo Library when you tap "Download". This is the only system permission the app uses.</p>
+        <ul class="dot-list">
+          <li><span data-i18n="c3-l1">Access is requested only when you explicitly choose to save an image.</span></li>
+          <li><span data-i18n-html="c3-l2">PureCode uses <em>add-only</em> access — it can save images but cannot read or browse your existing photos.</span></li>
+          <li><span data-i18n="c3-l3">No images are uploaded anywhere. Files are saved locally to your device only.</span></li>
+        </ul>
+      </div>
+
+      <!-- 4 -->
+      <div class="card reveal" data-delay="60">
+        <div class="card-header">
+          <div class="card-icon" style="--c:#4d8cff">💾</div>
+          <div>
+            <h2 data-i18n="c4-title">Local Storage</h2>
+            <p class="card-sub" data-i18n="c4-sub">Stays on your device</p>
+          </div>
+        </div>
+        <p data-i18n-html="c4-p1">PureCode saves your preferences (theme, background, font size, language, etc.) locally on your device using Apple's standard <code>UserDefaults</code> storage.</p>
+        <p data-i18n="c4-p2">This data never leaves your device and is not accessible to us or any third party.</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="card reveal" data-delay="60">
+        <div class="card-header">
+          <div class="card-icon" style="--c:#f24fb8">📡</div>
+          <div>
+            <h2 data-i18n="c5-title">No Network Requests</h2>
+            <p class="card-sub" data-i18n="c5-sub">100% offline</p>
+          </div>
+        </div>
+        <p data-i18n-html="c5-p1">PureCode works entirely offline. The app makes <strong>zero network requests</strong>. It does not connect to any servers, APIs, or external services.</p>
+        <div class="callout">
+          <div class="callout-icon">⚡</div>
+          <p data-i18n="c5-callout">Syntax highlighting, image rendering, and all processing happen locally on your device — instantly.</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="card reveal" data-delay="60">
+        <div class="card-header">
+          <div class="card-icon" style="--c:#ff7850">🔗</div>
+          <div>
+            <h2 data-i18n="c6-title">Third-Party Services</h2>
+            <p class="card-sub" data-i18n="c6-sub">None, zero, nada</p>
+          </div>
+        </div>
+        <p data-i18n="c6-p1">PureCode does not integrate any third-party SDKs, analytics frameworks, advertising networks, or crash reporting tools. There are no third parties involved in the operation of this app.</p>
+      </div>
+
+      <!-- 7 -->
+      <div class="card reveal" data-delay="60">
+        <div class="card-header">
+          <div class="card-icon" style="--c:#64c8ff">👶</div>
+          <div>
+            <h2 data-i18n="c7-title">Children's Privacy</h2>
+            <p class="card-sub" data-i18n="c7-sub">Safe for everyone</p>
+          </div>
+        </div>
+        <p data-i18n="c7-p1">PureCode does not knowingly collect any information from anyone, including children under the age of 13. Because we collect no data at all, the app is safe for users of any age.</p>
+      </div>
+
+      <!-- 8 -->
+      <div class="card reveal" data-delay="60">
+        <div class="card-header">
+          <div class="card-icon" style="--c:#b48cff">📋</div>
+          <div>
+            <h2 data-i18n="c8-title">Changes to This Policy</h2>
+            <p class="card-sub" data-i18n="c8-sub">We'll keep you informed</p>
+          </div>
+        </div>
+        <p data-i18n="c8-p1">If we ever update this Privacy Policy, we will revise the effective date at the top of this page. We encourage you to review this page periodically.</p>
+        <p data-i18n="c8-p2">Given that PureCode collects no data, changes to this policy are unlikely to affect your privacy in any way.</p>
+      </div>
+
+      <!-- 9 -->
+      <div class="card reveal contact-card" data-delay="60">
+        <div class="card-header">
+          <div class="card-icon" style="--c:#3cdc8c">✉️</div>
+          <div>
+            <h2 data-i18n="c9-title">Contact Us</h2>
+            <p class="card-sub" data-i18n="c9-sub">We're here to help</p>
+          </div>
+        </div>
+        <p data-i18n="c9-p1">If you have any questions or concerns about this Privacy Policy, feel free to reach out:</p>
+        <a class="contact-btn" href="https://newby-it.com/supportapp" target="_blank" rel="noopener noreferrer">
+          <span class="contact-btn-icon">🌐</span>
+          newby-it.com/supportapp
+          <span class="contact-btn-arrow">→</span>
+        </a>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-logo">{ }</div>
+      <p>© 2026 <span class="grad-text">PureCode</span>. <span data-i18n="footer-rights">All rights reserved.</span></p>
+      <p class="footer-sub" data-i18n="footer-sub">Made with ♥ for developers.</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
